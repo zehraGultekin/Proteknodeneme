@@ -1,0 +1,40 @@
+name: proteknodenee
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  dio: ^5.9.0
+  go_router: ^16.1.0
+  get_it: ^8.2.0
+  dartz: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - lib/assets/images/
+    - lib/assets/icons/
+
+
+
+# Launcher icon ayarları
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "lib/assets/icons/logo1.png"
