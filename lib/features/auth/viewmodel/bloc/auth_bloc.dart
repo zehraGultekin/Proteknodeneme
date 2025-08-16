@@ -1,11 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:proteknodenee/features/auth/data/repository/auth_repository.dart';
-import '../event/auth_event.dart';
-import '../state/auth_state.dart';
+import 'package:proteknodenee/features/auth/data/repository/auth_repository_impl.dart';
+import 'package:proteknodenee/features/auth/viewmodel/event/auth_event.dart';
+import 'package:proteknodenee/features/auth/viewmodel/state/auth_state.dart';
+
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
-  final AuthRepository repository;
-  
+  final AuthRepositoryImpl repository;
+
   AuthBloc(this.repository) : super(AuthInitial()) {
     on<LoginRequested>((event, emit) async {
       emit(AuthLoading());

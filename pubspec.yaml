@@ -28,8 +28,8 @@ flutter:
 
   # Assets
   assets:
-    - lib/assets/images/
-    - lib/assets/icons/
+    - assets/images/
+    - assets/icons/
 
 
 
@@ -37,4 +37,4 @@ flutter:
 flutter_icons:
   android: true
   ios: true
-  image_path: "lib/assets/icons/logo1.png"
+  image_path: "assets/icons/logo1.png"
