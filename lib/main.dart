@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proteknodenee/core/router/app_router.dart';
+import 'package:proteknodenee/core/theme/router/app_router.dart';
 
 void main() {
   runApp(const MyApp());

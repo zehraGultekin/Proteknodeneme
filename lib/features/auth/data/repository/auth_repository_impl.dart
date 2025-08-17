@@ -17,8 +17,6 @@ class AuthRepositoryImpl implements AuthRepository {
         (u) => u.email.toLowerCase() == email.toLowerCase(),
         orElse: () => throw Exception('User not found'),
       );
-
-      // Not: JsonPlaceholder’da şifre yok, sadece test için email kontrolü yapıyoruz
       return Right(user);
     } catch (e) {
       return Left(e.toString());

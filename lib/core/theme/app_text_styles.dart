@@ -3,9 +3,11 @@ import 'app_colors.dart';
 
 class AppTextStyles {
   static const TextStyle heading = TextStyle(
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: FontWeight.bold,
+    
     color: AppColors.textPrimary,
+    
   );
 
   static const TextStyle title = TextStyle(

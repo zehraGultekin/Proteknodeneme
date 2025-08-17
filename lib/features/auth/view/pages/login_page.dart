@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:proteknodenee/core/router/app_routes.dart';
+import 'package:proteknodenee/core/theme/router/app_routes.dart';
 import 'package:proteknodenee/core/theme/app_colors.dart';
 import 'package:proteknodenee/core/theme/app_text_styles.dart';
 import 'package:proteknodenee/core/theme/primary_button.dart';
@@ -45,7 +45,13 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Text(
+                    "Pro Tekno",
+                    style: AppTextStyles.heading,
+                  ),
                   const SizedBox(height: 50),
                   BlocListener<AuthBloc, AuthState>(
                     listener: (context, state) {
@@ -90,7 +96,6 @@ class LoginPage extends StatelessWidget {
                             obscureText: true,
                           ),
                           const SizedBox(height: 24),
-
                           BlocBuilder<AuthBloc, AuthState>(
                             builder: (context, state) {
                               if (state is AuthLoading) {
@@ -109,7 +114,6 @@ class LoginPage extends StatelessWidget {
                               );
                             },
                           ),
-
                           const SizedBox(height: 12),
                           TextButton(
                             onPressed: () {},
@@ -122,7 +126,6 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
